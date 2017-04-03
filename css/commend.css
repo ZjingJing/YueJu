@@ -102,3 +102,7 @@ a{
     float: right;
     margin: 24px 56px 0;
 }
+#footer #copyright{
+    clear: both;
+    text-align: center;
+}
