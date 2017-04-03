@@ -15,7 +15,6 @@ require(['jquery'],function($) {
 
     var $moreChoose = $("#more-choose li");
     $moreChoose.on('click',function(){
-        //console.log($(this));
         $(this).addClass("selected").siblings().removeClass("selected");
         $("#more-choose li input").parent().removeClass("selected");
     });
@@ -24,7 +23,6 @@ require(['jquery'],function($) {
     var $ulIdx = $("#many-house .many-house ul");
     $liIdx.on('click',function(){
         var index = $(this).index();
-        //console.log($(this).index);
         $liIdx.eq(index).addClass("selected").siblings().removeClass("selected");
         $ulIdx.eq(index).show().siblings().hide();
     })
