@@ -24,9 +24,11 @@ body{
 #left-main .img-zone .big-img{
     float: left;
     margin-right: 14px;
+    height: 402px;
+    width: 610px;
+    overflow: hidden;
 }
 #left-main .img-zone .big-img img{
-    height: 402px;
     width: 610px;
 }
 #left-main .img-zone .small-img{
@@ -35,7 +37,9 @@ body{
 }
 #left-main .img-zone .small-img li{
     margin-top: 14px;
+    width: 145px;
     height: 90px;
+    overflow: hidden;
     cursor: pointer;
 }
 #left-main .img-zone .small-img li:nth-child(1){
@@ -43,10 +47,8 @@ body{
 }
 #left-main .img-zone .small-img img{
     width: 145px;
-    height: 90px;
     opacity: .5;
     filter: alpha(opacity=50);
-    /*overflow: hidden;*/
 }
 #left-main .img-zone .small-img img.selected{
     opacity: 1;
