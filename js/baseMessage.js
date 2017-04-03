@@ -2,7 +2,7 @@
  * Created by ZJing on 2017/3/3.
  */
 require(['jquery'],function($){
-    //µã»÷ÖÃ¿Õ
+    //ï¿½ï¿½ï¿½ï¿½Ã¿ï¿½
     $("#right-more input").focus(function(){
         if($(this).val() == this.defaultValue){
             this.value = "";
@@ -10,7 +10,7 @@ require(['jquery'],function($){
     }).blur(function(){
         $(this).val(this.value == "" ? this.defaultValue : this.value);
     })
-    //Ñ¡Ïî¿¨ÇÐ»»
+    //Ñ¡ï¿½î¿¨ï¿½Ð»ï¿½
     var $dDiv = $("#left-main .house-more .content .head div");
     var $Aiyaya = $("#left-main .house-more .content .aiyaya");
     $dDiv.on('click',function(){
@@ -18,19 +18,11 @@ require(['jquery'],function($){
         $dDiv.eq(idx).addClass("selected").siblings().removeClass("selected");
         $Aiyaya.eq(idx).addClass("selected").siblings().removeClass("selected");
     });
-    //Í¼Æ¬ÂÖ²¥
+    //Í¼Æ¬ï¿½Ö²ï¿½
     var $bigImg = $("#main .big-img img");
     var $smallImg = $("#main .small-img img");
     var iNow = 0;
     var timer;
-    //timer();
-    //function timer(){
-    //    setInterval(function(){
-    //        changeImg(iNow);
-    //        iNow++;
-    //        iNow==4?iNow=0:iNow;
-    //    },1000);
-    //}
     timer = setInterval(function(){
         changeImg(iNow);
         iNow++;
@@ -71,7 +63,7 @@ require(['jquery'],function($){
         $smallImg.eq(idx).addClass("selected").parents("li")
             .siblings().children("img").removeClass("selected");
     }
-    //×¡·¿ÈÕÆÚ
+    //×¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     layui.use('laydate', function(){
         var laydate = layui.laydate;
         var start = {
@@ -79,8 +71,8 @@ require(['jquery'],function($){
             ,max: '2099-06-16 23:59:59'
             ,istoday: false
             ,choose: function(datas){
-                end.min = datas + 1; //¿ªÊ¼ÈÕÑ¡ºÃºó£¬ÖØÖÃ½áÊøÈÕµÄ×îÐ¡ÈÕÆÚ
-                end.start = datas + 1; //½«½áÊøÈÕµÄ³õÊ¼ÖµÉè¶¨Îª¿ªÊ¼ÈÕ
+                end.min = datas + 1; //ï¿½ï¿½Ê¼ï¿½ï¿½Ñ¡ï¿½Ãºï¿½ï¿½ï¿½ï¿½Ã½ï¿½ï¿½ï¿½ï¿½Õµï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½
+                end.start = datas + 1; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÕµÄ³ï¿½Ê¼Öµï¿½è¶¨Îªï¿½ï¿½Ê¼ï¿½ï¿½
             }
         };
         var end = {
@@ -88,7 +80,7 @@ require(['jquery'],function($){
             ,max: '2099-06-16 23:59:59'
             //,istoday: false
             ,choose: function(datas){
-                start.max = datas; //½áÊøÈÕÑ¡ºÃºó£¬ÖØÖÃ¿ªÊ¼ÈÕµÄ×î´óÈÕÆÚ
+                start.max = datas; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½Ãºï¿½ï¿½ï¿½ï¿½Ã¿ï¿½Ê¼ï¿½Õµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
             }
         };
         document.getElementById('LAY_demorange_s').onclick = function(){
